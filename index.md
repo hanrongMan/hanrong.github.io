@@ -6,9 +6,6 @@ layout: default
 
   <ol class="post-list">
    {% for post in site.posts %}
-<!--                                       <li> -->
-<!--                                         <a href="{{ post.url }}">{{ post.title }}</a> -->
-<!--                                       </li> -->
     <li>
       <h2 class="post-list__post-title post-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h2>
       <p class="excerpt">{{ post.content | strip_html | strip_newlines | truncate: 250 }}&hellip;</p>
